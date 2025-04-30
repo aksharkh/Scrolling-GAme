@@ -29,11 +29,9 @@ app.get('/api/games', async (req, res) => {
   app.get('/api/seed', async (req, res) => {
     await Game.deleteMany({});
     await Game.insertMany([
-        { title: 'Tetris', embedUrl: 'https://playtetris.io/' },
-    { title: '2048', embedUrl: 'https://play2048.co/' },
-    { title: 'Dino Run', embedUrl: 'https://elgoog.im/dino/' },
-    { title: 'Flappy Bird', embedUrl: 'https://flappybird.io/' },
-    { title: 'Minesweeper', embedUrl: 'https://minesweeper.online/' },
+        { title: 'Tetris', embedUrl: 'https://mrbid.github.io/cubeshooter/' },
+        { title: 'ok', embedUrl: 'https://mrbid.github.io/snowboarder/' },
+        
     ]);
     res.send('Database seeded!');
   });
